@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mimi Arts — Handcrafted Paintings</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-mark">✦</span>
+      <span class="logo-text">Mimi Arts</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#commission">Commission</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-cta">Order Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#gallery" onclick="closeMobile()">Gallery</a>
+    <a href="#commission" onclick="closeMobile()">Commission</a>
+    <a href="#about" onclick="closeMobile()">About</a>
+    <a href="#contact" onclick="closeMobile()">Order Now</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="petal petal-1"></div>
+      <div class="petal petal-2"></div>
+      <div class="petal petal-3"></div>
+      <div class="petal petal-4"></div>
+      <div class="petal petal-5"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">✦ Handcrafted since 2019</p>
+      <h1 class="hero-title">
+        Art that speaks<br />
+        <em>your story</em>
+      </h1>
+      <p class="hero-sub">Bespoke oil & watercolour paintings crafted to order.<br />Every brushstroke, uniquely yours.</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn btn-primary">Explore Gallery</a>
+        <a href="#commission" class="btn btn-ghost">Commission a Piece</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-ring">
+        <svg viewBox="0 0 120 120" class="badge-svg">
+          <path id="badgePath" d="M 60,60 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none"/>
+          <text>
+            <textPath href="#badgePath" startOffset="0%">5 YEARS OF ARTISTRY · SINCE 2019 · MIMI ARTS · </textPath>
+          </text>
+        </svg>
+        <div class="badge-center">✦</div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num" data-count="200">0</span><span class="stat-plus">+</span>
+        <p>Paintings Sold</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="5">0</span><span class="stat-plus"> yrs</span>
+        <p>Experience</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="98">0</span><span class="stat-plus">%</span>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span>
+        <p>Art Styles</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="section-header">
+      <p class="section-label">✦ Curated Collection</p>
+      <h2 class="section-title">The Gallery</h2>
+      <p class="section-sub">Each piece is one-of-a-kind. Browse our recent works or commission your own.</p>
+    </div>
+
+    <div class="gallery-filters">
+      <button class="filter active" data-filter="all">All Works</button>
+      <button class="filter" data-filter="portrait">Portraits</button>
+      <button class="filter" data-filter="landscape">Landscapes</button>
+      <button class="filter" data-filter="abstract">Abstract</button>
+      <button class="filter" data-filter="floral">Florals</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Paintings injected by JS -->
+    </div>
+  </section>
+
+  <!-- COMMISSION -->
+  <section class="commission" id="commission">
+    <div class="commission-inner">
+      <div class="commission-text">
+        <p class="section-label">✦ Made For You</p>
+        <h2 class="section-title">Commission<br /><em>a Painting</em></h2>
+        <p>Every commissioned piece begins with a conversation. Share your vision — a beloved portrait, a cherished landscape, a scene frozen in memory — and watch it come to life on canvas.</p>
+        <div class="process-steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <div>
+              <strong>Share your idea</strong>
+              <p>Tell me what you envision — photos, references, mood boards welcome.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <div>
+              <strong>Get a quote</strong>
+              <p>Custom pricing based on size, style, and complexity. No hidden costs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <div>
+              <strong>Watch it unfold</strong>
+              <p>Progress updates along the way. Final piece shipped to your door.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Start Your Commission</a>
+      </div>
+      <div class="commission-visual">
+        <div class="palette-card">
+          <div class="palette-swatches">
+            <div class="swatch" style="background:#f4a0b5"></div>
+            <div class="swatch" style="background:#e8789a"></div>
+            <div class="swatch" style="background:#c94f78"></div>
+            <div class="swatch" style="background:#f9d5e2"></div>
+            <div class="swatch" style="background:#fef0f5"></div>
+          </div>
+          <p class="palette-label">Signature Rose Palette</p>
+        </div>
+        <div class="pricing-card">
+          <h3>Pricing Guide</h3>
+          <div class="price-row">
+            <span>Small (8×10")</span>
+            <span class="price">₹2,500</span>
+          </div>
+          <div class="price-row">
+            <span>Medium (16×20")</span>
+            <span class="price">₹5,500</span>
+          </div>
+          <div class="price-row">
+            <span>Large (24×30")</span>
+            <span class="price">₹10,000</span>
+          </div>
+          <div class="price-row">
+            <span>XL Custom</span>
+            <span class="price">On Request</span>
+          </div>
+          <p class="price-note">* Includes framing & insured shipping</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-visual">
+        <div class="about-frame">
+          <div class="about-portrait">
+            <div class="portrait-initials">M</div>
+          </div>
+          <div class="about-years">
+            <span class="years-num">5</span>
+            <span class="years-label">Years of<br/>Artistry</span>
+          </div>
+        </div>
+        <div class="about-quote">
+          <p>"Painting is not about technique — it's about transferring feeling onto canvas."</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">✦ The Artist</p>
+        <h2 class="section-title">Meet Mimi</h2>
+        <p>I'm an independent artist based in India, painting full-time since 2019. What began as a weekend passion evolved into a mission: making fine art accessible, personal, and meaningful to everyone.</p>
+        <p>Specialising in oil and watercolour, I draw from impressionist and contemporary traditions — blending loose, expressive strokes with intimate attention to light and emotion.</p>
+        <p>Over five years, I've shipped paintings across India, to Singapore, the UAE, and beyond. Every piece I create carries a piece of my heart.</p>
+        <div class="skill-chips">
+          <span>Oil on Canvas</span>
+          <span>Watercolour</span>
+          <span>Portraits</span>
+          <span>Landscapes</span>
+          <span>Abstracts</span>
+          <span>Florals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header">
+      <p class="section-label">✦ From Our Collectors</p>
+      <h2 class="section-title">What They Say</h2>
+    </div>
+    <div class="testimonials-track" id="testimonialsTrack">
+      <!-- injected by JS -->
+    </div>
+    <div class="testimonials-dots" id="testimDots"></div>
+  </section>
+
+  <!-- CONTACT / ORDER FORM -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <p class="section-label">✦ Let's Create</p>
+        <h2 class="section-title">Order Your<br /><em>Painting</em></h2>
+        <p>Ready to own a one-of-a-kind artwork? Fill in the form and I'll get back to you within 24 hours.</p>
+        <div class="contact-info">
+          <a href="mailto:hello@mimiarts.in">hello@mimiarts.in</a>
+          <a href="https://instagram.com/mimiarts" target="_blank">@mimiarts</a>
+        </div>
+      </div>
+      <form class="order-form" id="orderForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="fname" placeholder="Priya Sharma" required />
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" id="femail" placeholder="priya@gmail.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Type of Painting *</label>
+          <select id="ftype" required>
+            <option value="">Select a style…</option>
+            <option>Portrait</option>
+            <option>Landscape</option>
+            <option>Abstract</option>
+            <option>Floral</option>
+            <option>Cityscape</option>
+            <option>Pet Portrait</option>
+            <option>Other / Surprise Me</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Canvas Size</label>
+            <select id="fsize">
+              <option>Small 8×10"</option>
+              <option>Medium 16×20"</option>
+              <option>Large 24×30"</option>
+              <option>XL / Custom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Budget (₹)</label>
+            <input type="number" id="fbudget" placeholder="5000" min="2500" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Your Vision / Description *</label>
+          <textarea id="fdesc" rows="4" placeholder="Describe what you'd like — mood, colours, subject, any references…" required></textarea>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" id="fcustom" />
+          <label for="fcustom">I'd like progress updates while my painting is being made</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span id="submitText">Send My Order Request ✦</span>
+        </button>
+        <div class="form-success" id="formSuccess" style="display:none;">
+          ✦ Thank you! I'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">Mimi Arts</span>
+        <p>Handcrafted paintings since 2019.<br/>Made with love in India.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#gallery">Gallery</a>
+        <a href="#commission">Commission</a>
+        <a href="#about">About</a>
+        <a href="#contact">Order</a>
+      </div>
+      <p class="footer-copy">© 2024 Mimi Arts. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">✕</button>
+    <div class="lb-content">
+      <div class="lb-art" id="lbArt"></div>
+      <div class="lb-info">
+        <h3 id="lbTitle"></h3>
+        <p id="lbDesc"></p>
+        <p id="lbPrice"></p>
+        <a href="#contact" class="btn btn-primary" id="lbOrder" onclick="closeLightbox()">Commission Similar ✦</a>
+      </div>
+    </div>
+  </div>
+  <div class="lb-overlay" id="lbOverlay"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
