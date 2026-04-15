@@ -56,3 +56,13 @@ project-root/
 ```bash
 docker build -t frontend-image ./frontend
 docker build -t backend-image ./backend
+
+2️⃣ Deploy to Kubernetes
+kubectl apply -f k8s/
+3️⃣ Access the Application
+http://localhost:3000
+
+🎯 Output
+✅ Frontend successfully fetches data from backend API
+✅ Application runs smoothly inside Kubernetes cluster
+✅ Demonstrates real-world microservices communication
